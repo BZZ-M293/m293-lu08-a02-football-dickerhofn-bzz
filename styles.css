@@ -105,12 +105,13 @@ section h2 {
     background-image: url('bild3.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: center;
+    opacity: 0.5;
 }
 
 #welcome h1 {
