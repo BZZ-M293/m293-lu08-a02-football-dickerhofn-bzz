@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1FC Hinterforst - Kontakt</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to external stylesheet -->
+</head>
+<body>
+<header>
+    <img id="club-logo" src="186edff5-66ef-43fa-a8b8-785b98fd1cc7(1).jpg" alt="Club Logo">
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="spiele.html">Spiele</a></li>
+            <li><a href="sponsoren.html">Sponsoren</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="contact">
+        <div class="content">
+            <h2>Kontaktiere uns</h2>
+
+            <div class="contact-info">
+                <h3>Ansprechpartner</h3>
+                <p><strong>Max Mustermann</strong><br>
+                    Vereinsvorsitzender<br>
+                    Email: max.mustermann@1fchinterforst.de<br>
+                    Telefon: +49 123 4567890
+                </p>
+
+                <p><strong>Lisa Musterfrau</strong><br>
+                    Marketing & Kommunikation<br>
+                    Email: lisa.musterfrau@1fchinterforst.de<br>
+                    Telefon: +49 987 6543210
+                </p>
+
+                <p><strong>Technischer Support</strong><br>
+                    Email: support@1fchinterforst.de<br>
+                    Telefon: +49 111 222333
+                </p>
+            </div>
+
+            <div class="contact-form">
+                <h3>Kontaktformular</h3>
+                <form action="submit_form.php" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Nachricht senden</button>
+                </form>
+            </div>
+
+            <div class="address-info">
+                <h3>Adresse</h3>
+                <p>1FC Hinterforst<br>
+                    Musterstraße 123<br>
+                    12345 Hinterforst<br>
+                    Deutschland<br><br>
+                    <a href="anfahrt.html">Anfahrtsbeschreibung</a>
+                </p>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 1FC Hinterforst. Alle Rechte vorbehalten.</p>
+</footer>
+</body>
+</html>

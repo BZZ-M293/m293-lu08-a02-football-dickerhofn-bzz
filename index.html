@@ -1,21 +1,120 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>1. FC Hinterforst</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1FC Hinterforst</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to external stylesheet -->
+    <style>
+        /* Additional styles for the highlights and news sections */
+        #highlights, #news {
+            background-color: #f5f5f5;
+            padding: 20px 0;
+            text-align: center;
+        }
 
+        .highlight, .news-item {
+            display: inline-block;
+            width: calc(50% - 20px);
+            margin: 10px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .highlight img, .news-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .highlight h3, .news-item h3 {
+            margin-top: 10px;
+            font-family: 'Arial', sans-serif; /* Separate font for titles */
+            font-size: 1.5rem; /* Larger font size for titles */
+            font-weight: bold; /* Bold font weight for titles */
+        }
+
+        .highlight p, .news-item p {
+            margin: 10px 0;
+            font-family: 'Helvetica', sans-serif; /* Font for regular text */
+            font-size: 1rem; /* Normal font size for regular text */
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .highlight, .news-item {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    
-  </header>
-  <nav>
-    
-  </nav>
-  <h1>1. FC Hinterforst</h1>
+<header>
+    <img id="club-logo" src="186edff5-66ef-43fa-a8b8-785b98fd1cc7(1).jpg" alt="Club Logo">
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="spiele.html">Spiele</a></li>
+            <li><a href="sponsoren.html">Sponsoren</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="welcome">
+        <div class="content">
+            <h1>Welcome to 1FC Hinterforst</h1>
+            <p>1FC Hinterforst - ein Fußballverein mit langer Tradition und einer starken Gemeinschaft.</p>
+        </div>
+    </section>
 
-  <footer>
-    
-  </footer>
+    <section id="highlights">
+        <a href="leagueBericht.html" style="text-decoration: none; color: inherit;">
+            <div class="highlight">
+                <img src="bild2.jpg" alt="Highlight 1">
+                <h3>League Champions 2023</h3>
+                <p>Ein Moment des Feierns nach dem Gewinn der Meisterschaft.</p>
+            </div>
+        </a>
+        <a href="communityDayBericht.html" style="text-decoration: none; color: inherit;">
+            <div class="highlight">
+                <img src="bild1.jpg" alt="Highlight 2">
+                <h3>Community Day 2024</h3>
+                <p>Gemeinschaftsveranstaltung im Hinterforst Stadion.</p>
+            </div>
+        </a>
+    </section>
+
+    <section id="news">
+        <a href="newpresident.html" style="text-decoration: none; color: inherit;">
+            <div class="news-item">
+                <h3>New Club President Elected</h3>
+                <p>John Doe has been elected as the new president of 1FC Hinterforst.</p>
+            </div>
+        </a>
+        <div class="news-item">
+            <h3>Upcoming Tournaments Announced</h3>
+            <p>Check out the schedule for the upcoming tournaments.</p>
+        </div>
+    </section>
+
+
+
+    <section id="call-to-action">
+        <div class="content">
+            <h2>Join the Games or Support the Club</h2>
+            <p>Get involved with 1FC Hinterforst! Whether you're a player, supporter, or sponsor, there's a place for you.</p>
+            <p><a href="kontakt.html">Contact Us</a></p>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 1FC Hinterforst. All rights reserved.</p>
+</footer>
+
 </body>
 </html>

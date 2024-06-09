@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets kaufen - 1FC Hinterforst</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link to external stylesheet -->
+    <style>
+        /* Additional styles specific to tickets.html */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        header img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 80px;
+            height: auto;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .ticket {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ticket h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .ticket p {
+            margin: 5px 0;
+        }
+
+        .ticket strong {
+            color: #f00;
+        }
+
+        form {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select, input {
+            padding: 8px;
+            margin-bottom: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .confirmation {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img id="club-logo" src="186edff5-66ef-43fa-a8b8-785b98fd1cc7(1).jpg" alt="Club Logo">
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="spiele.html">Spiele</a></li>
+            <li><a href="sponsoren.html">Sponsoren</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="ticket-info">
+        <div class="ticket">
+            <h2>Wählen Sie das Spiel aus:</h2>
+            <form id="ticket-form" action="confirmation.html" method="post">
+                <label for="match-select">Spiel auswählen:</label>
+                <select id="match-select" name="match">
+                    <option value="greenfield">1FC Hinterforst vs. FC Greenfield - 15. Juni 2024</option>
+                    <option value="meadowview">1FC Hinterforst vs. FC Meadowview - 25. Juni 2024</option>
+                    <option value="lakeview">1FC Hinterforst vs. FC Lakeview - 10. Juli 2024</option>
+                </select>
+                <label for="ticket-type">Tickettyp:</label>
+                <select id="ticket-type" name="ticket-type">
+                    <option value="normal">Normales Ticket (10€)</option>
+                    <option value="premium">Premium Ticket (20€)</option>
+                </select>
+                <label for="quantity">Anzahl der Tickets:</label>
+                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                <button type="submit">Tickets kaufen</button>
+            </form>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 1FC Hinterforst. Alle Rechte vorbehalten.</p>
+</footer>
+</body>
+</html>

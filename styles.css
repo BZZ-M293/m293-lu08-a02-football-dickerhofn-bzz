@@ -1,0 +1,383 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #23527c;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    height: 100px; /* Feste Höhe des Headers */
+}
+
+#club-logo {
+    position: absolute;
+    top: 10px; /* Anpassen nach Bedarf */
+    left: 20px; /* Anpassen nach Bedarf */
+    width: 80px; /* Breite des quadratischen Logos */
+    height: 80px; /* Höhe des quadratischen Logos */
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav li {
+    margin: 0 10px;
+}
+
+header nav a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Homepage Styles */
+#welcome {
+    background-image: url('bild3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+#welcome h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Highlights Section */
+#highlights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.highlight {
+    margin: 20px;
+    width: calc(100% / 2 - 40px); /* Two items per row */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.highlight:hover {
+    transform: translateY(-10px);
+}
+
+.highlight img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* News Section */
+#news {
+    text-align: center;
+}
+
+.news-item {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.news-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Upcoming Matches Section */
+#upcoming-matches {
+    text-align: center;
+}
+
+.match {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.match h3 {
+    margin-bottom: 5px;
+}
+
+.match p {
+    margin-bottom: 5px;
+}
+
+.match a {
+    color: #337ab7;
+    font-weight: bold;
+}
+
+.match a:hover {
+    color: #23527c;
+}
+
+/* Call to Action Section */
+#call-to-action {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#call-to-action p {
+    margin-bottom: 20px;
+}
+
+#call-to-action a {
+    color: #ffcc00;
+    font-weight: bold;
+    border-bottom: 1px solid #ffcc00;
+    padding-bottom: 2px;
+    transition: border-bottom 0.3s ease;
+}
+
+#call-to-action a:hover {
+    border-bottom: 1px solid transparent;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    .highlight {
+        width: calc(100% - 40px); /* One item per row */
+    }
+
+    .highlight img,
+    .match img,
+    .sponsor img {
+        height: 350px;
+    }
+
+    /* Grid layout for Spiele, Sponsoren, Kontakt */
+    #matches,
+    #sponsors,
+    #contact {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+}
+/* Additional styles for the slideshow */
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    justify-content: center; /* Center align the slides */
+}
+
+.slide {
+    min-width: 100%;
+    flex: 0 0 auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.highlight {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align content */
+}
+
+.highlight img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlight h3 {
+    margin-top: 10px;
+}
+
+.highlight p {
+    margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .slides {
+        flex-wrap: wrap;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+
+    .highlight img {
+        border-radius: 0;
+    }
+}
+/* Additional styles for the highlights and news sections */
+#highlights, #news {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.highlight, .news-item {
+    display: inline-block;
+    width: calc(50% - 20px); /* 50% width minus margin */
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    vertical-align: top;
+}
+/* Additional styles for the highlights and news sections */
+#highlights, #news {
+    background-color: #f5f5f5;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.highlight, .news-item {
+    display: inline-block;
+    width: calc(50% - 20px); /* 50% width minus margin */
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    vertical-align: top;
+}
+
+.highlight img, .news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlight h3, .news-item h3 {
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif; /* Separate font for titles */
+    font-size: 1.5rem; /* Larger font size for titles */
+    font-weight: bold; /* Bold font weight for titles */
+}
+
+.highlight p, .news-item p {
+    margin: 10px 0;
+    font-family: 'Helvetica', sans-serif; /* Font for regular text */
+    font-size: 1rem; /* Normal font size for regular text */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .highlight, .news-item {
+        width: 100%;
+    }
+}
+
+.highlight img, .news-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.highlight h3, .news-item h3 {
+    margin-top: 10px;
+}
+
+.highlight p, .news-item p {
+    margin: 10px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .highlight, .news-item {
+        width: 100%;
+    }
+}
+
