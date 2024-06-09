@@ -9,18 +9,23 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--bg-color);
+    text-align: center;
+
+    /* background-color: var(--bg-color);*/
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     color: #333;
     margin-bottom: 10px;
+
 }
 
 p {
     margin-bottom: 20px;
     color: #555;
+
+
 }
 
 a {
@@ -159,7 +164,7 @@ section h2 {
 
 .match {
     margin-bottom: 20px;
-    text-align: left;
+
 }
 
 .match h3 {
@@ -239,6 +244,10 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
     }
+
+}
+.contact-form {
+    text-align: center;
 }
 /* Additional styles for the slideshow */
 .slideshow {
